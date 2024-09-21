@@ -56,18 +56,18 @@
         \item \textbf{Rajarshi Biswas}\\
               \textbf{Roll No: 30085323005}\\
               \textbf{Department: BSc in IT (Cyber Security)}
-        \item \textbf{Aabir Sengupta }\\
-              \textbf{Roll No: 39959223039}\\
-              \textbf{Department: BSc in Forensic Science}
-        \item \textbf{Aditi Ghosh}\\
-              \textbf{Roll No: 30059223047}\\
-              \textbf{Department: BSc in Forensic Science}
         \item \textbf{Agnik Dey}\\
               \textbf{Roll No: 30085323019}\\
               \textbf{Department: BSc in IT (Cyber Security)}
+        \item \textbf{Aditi Ghosh}\\
+              \textbf{Roll No: 30059223047}\\
+              \textbf{Department: BSc in Forensic Science}
         \item \textbf{Nawazish Alam}\\
               \textbf{Roll No: 30084323041}\\
               \textbf{Department: BSc in IT (Data Science)}
+              \item \textbf{Aabir Sengupta}\\
+              \textbf{Roll No: 39959223039}\\
+              \textbf{Department: BSc in Forensic Science}
     \end{enumerate}
     \vspace{0.5 cm}
     
@@ -140,10 +140,119 @@
         ($(current page.south east) + (-1cm,1cm)$);
 \end{tikzpicture}
 \vspace{-2cm}
-\subsection*{Entry by Aabir Sengupta}
+\subsection*{Entry by Agnik Dey}
 \textit{Date: [\today]}\\
-% Write your lab notebook entry here.
+\section*{\large{Git Assignment 2 : C program for calculator in the local
+{\underline{repository and publishing it a public repository}}}}
+\paragraph{}
+The primary purpose of a calculator program is to perform mathematical calculations efficiently and accurately. It provides a user-friendly interface for entering numbers and operators, and then quickly calculates and displays the result. 
 
+Calculators can range from simple devices that handle basic arithmetic to more advanced ones capable of complex functions like trigonometry, statistics, and even programming. They are widely used in various fields, including education, science, engineering, and everyday life.
+
+\begin{center}
+\section*{\underline{{:Explain the code properly:}}}
+\end{center}
+
+\paragraph{}
+This C program is designed to function as a simple calculator, allowing users to perform basic arithmetic operations (addition, subtraction, multiplication, and division).\\
+
+\begin{flushleft}
+\underline{\textbf{Key Components and Their Functions:}}\\
+\end{flushleft}
+
+\begin{enumerate}
+
+\item Header Inclusion:
+   - $\text{\#}include <stdio.h>$ : This includes the standard input/output library, which provides functions like printf (for printing output) and scanf (for reading input).\\
+
+\item  Main Function:
+   - int main(): This is the entry point of the program. It's where the execution begins.\\
+
+\item Variable Declarations:
+   - char operator: Stores the operator entered by the user (+, -, *, /).
+   - double num1, num2: Stores the two numbers entered by the user.
+   - double result: Stores the calculated result.\\
+
+\item User Input:
+   - printf("Enter an operator (+, -, *, /): ");: Prompts the user to enter an operator.
+   - scanf("%c", &operator);: Reads the character entered by the user and stores it in the operator variable.
+   - Similar prompts and reads are used for the two numbers.\\
+
+\item Operator Checking and Calculation:
+   - switch (operator): This is a conditional statement that checks the value of the operator variable.
+   - case '+':, case '-':, case '*':, case '/':: These cases handle different operators.
+   - The respective arithmetic operations are performed based on the operator and the results are stored in the result variable.
+   - A check for division by zero is included to prevent errors.\\
+
+\item Output:
+   - printf("Result: ")\\
+\end{enumerate}
+
+\begin{flushleft}
+    \underline{\textbf{Flow of Execution:}}\\
+\end{flushleft}
+
+\begin{enumerate}
+\item{The program starts execution from the main function.}\\
+\item The user is prompted to enter an operator.\\
+\item The entered operator is stored.\\
+\item The user is prompted to enter two numbers.\\
+\item The entered numbers are stored.\\
+\begin{tikzpicture}
+    [remember picture, overlay]
+    \draw[line width = 2pt, black] 
+        ($(current page.north west) + (1cm,-1cm)$) 
+        rectangle 
+        ($(current page.south east) + (-1cm,1cm)$);
+\end{tikzpicture}
+\item The switch statement checks the operator and performs the corresponding calculation.\\
+\item The result is printed.\\
+\item The program ends.\\
+\end{enumerate}
+
+\paragraph{}
+Overall, this code provides a basic calculator functionality by taking user input for operator and two numbers, performing the calculation based on the operator, and displaying the result.
+
+
+\section*{\large{How to use it, what will be the output after program \underline{compilation, set an example}}}
+
+
+\begin{flushleft}
+    \underline{\textbf{How to Use:}}
+\end{flushleft}
+
+\begin{enumerate}
+
+\item Compile the code:
+   - Save the code in a .c file (e.g., calculator.c).
+   - Open a terminal or command prompt.
+   - Navigate to the directory where you saved the file.
+   - Compile the code using a C compiler like GCC:
+     gcc calculator.c -o calculator
+     This will create an executable file named calculator.\\
+
+\item Run the program:
+   - Execute the executable file:
+     ./calculator
+
+Example:\\
+Enter an operator (+, -, *, /): +\\
+Enter two numbers: 5 3\\
+Result: 8.00\\
+
+In this example:
+- The user enters + as the operator.\\
+- The user enters 5 and 3 as the numbers.\\
+- The program calculates 5 + 3 and prints the result 8.00.\\
+
+Other examples:\\
+- - as the operator: 5 - 3 will result in 2.00.\\
+- * as the operator: 5 * 3 will result in 15.00.\\
+- / as the operator: 5 / 3 will result in 1.67.\\
+\end{enumerate}
+\vspace{0.5 cm}
+
+\textbf{Calculator program link:} \href{https://github.com/Rajarshi-2005/calculator/blob/main/cal.c}{https://github.com/Rajarshi-2005/calculator/blob/main/cal.c}
 
 
 
@@ -161,23 +270,6 @@
 % Write your lab notebook entry here.
 
 
-
-
-\newpage
-\begin{tikzpicture}
-    [remember picture, overlay]
-    \draw[line width = 2pt, black] 
-        ($(current page.north west) + (1cm,-1cm)$) 
-        rectangle 
-        ($(current page.south east) + (-1cm,1cm)$);
-\end{tikzpicture}
-\vspace{-2cm}
-\subsection*{Entry by Agnik Dey}
-\textit{Date: [\today]}\\
-% Write your lab notebook entry here.
-
-
-
 \newpage
 \begin{tikzpicture}
     [remember picture, overlay]
@@ -189,8 +281,7 @@
 \vspace{-2cm}
 \subsection*{Entry by Nawazish Alam}
 \textit{Date: [\today]}\\
-% Write your lab notebook entry here.
-\section*{\Huge{Git Assignment 3 : Branching and Merging}}
+\section*{\Huge{Git Assignment 4 : Branching and Merging}}
 
 \paragraph{Objective:} Demonstrate proficiency in Git branching, merging, and conflict resolution.
 
