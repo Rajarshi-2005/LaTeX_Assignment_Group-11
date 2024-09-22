@@ -9,12 +9,12 @@
     margin=1in,top=25 mm]{geometry} % Adjusting the margins
 \usepackage{tikz}
 \usepackage{array}
+\usepackage{pdfpages}
 \usepackage{tabularx}
 \usepackage{amsmath}
 \usepackage{amssymb}
 \usepackage{paralist}
 \usepackage{ragged2e}
-
 \usetikzlibrary{calc}
 
 \begin{document}
@@ -92,15 +92,16 @@
 \renewcommand{\arraystretch}{2}
 \setlength{\tabcolsep}{0pt} 
 
-\begin{tabular}{|>{\centering\arraybackslash}p{80pt}|>{\centering\arraybackslash}p{350pt}|}
+\begin{tabular}{|>{\centering\arraybackslash}p{50pt}|>{\centering\arraybackslash}p{350pt}|>{\centering\arraybackslash}p{80pt}|}
 \hline
-\textbf{Serial No.} & \textbf{Questions} \\
+\textbf{Serial No.} & \textbf{Questions} & \textbf{Sign}\\
 \hline
-1 & Introduction to GitHub and GitHub Desktop version installation \\\hline
-2 & Building a C program for a calculator in the local repository,committing,and publishing it as a public repository \\\hline
-3 & Converting a submit button to Chin Tapak Dum Dum \\\hline
-4 & Branching and Merging \\\hline
-
+1 & Introduction to GitHub and GitHub Desktop version installation  &\\\hline
+2 & Building a C program for a calculator in the local repository,committing,and publishing it as a public repository &\\\hline
+3 & Converting a submit button to Chin Tapak Dum Dum &\\\hline
+4 & Branching and Merging &\\\hline
+5 & Introduction to LaTeX and LaTeX installation&\\\hline
+6 & Make a CV using LaTeX &\\\hline
 \end{tabular}
 
 \newpage
@@ -283,7 +284,7 @@ Other examples:\\
    - Search for the code where the submit button is defined. This is typically found in the frontend code of the application. Depending on the technology stack used (e.g., HTML/CSS, React, Angular, etc.), it could be in a file like index.html, App.js, ButtonComponent.js, or a similar file.\\
 
 \item\textbf{Rename the Button:}
-   - You renamed the button to ``Chin Tapak Dum Dum". If the button’s size became disproportionate, it’s likely due to styling issues.\\
+   - You renamed the button to "Chin Tapak Dum Dum". If the button’s size became disproportionate, it’s likely due to styling issues.\\
 
 \item\textbf{Test the Application:}
    - Run the application again to ensure that the button appears correctly and that there are no additional issues.\\
@@ -293,7 +294,7 @@ Other examples:\\
 
    bash
    git add .
-   git commit -m ``Fixed button styling after renaming to `Chin Tapak Dum Dum'"
+   git commit -m "Fixed button styling after renaming to 'Chin Tapak Dum Dum'"
    \\
    
 \item\textbf{Push Your Changes:}
@@ -398,5 +399,39 @@ Other examples:\\
 This assignment focused on the use of Git branching and merging to manage features in a collaborative environment. After creating separate branches for feature-1 and feature-2, each was developed independently.
 When merging feature-1 into the main branch, there were no conflicts. However, the merge of feature-2 caused a conflict in the shared.txt file. Conflict resolution was done manually, ensuring that the changes from both branches were retained.
 The practical experience highlighted the importance of clear commit messages and Git’s branching capabilities for parallel development and conflict management.
+
+\newpage
+\begin{tikzpicture}
+    [remember picture, overlay]
+    \draw[line width = 2pt, black] 
+        ($(current page.north west) + (1cm,-1cm)$) 
+        rectangle 
+        ($(current page.south east) + (-1cm,1cm)$);
+\end{tikzpicture}
+\vspace{-2cm}
+\subsection*{Entry by: Rajarshi Biswas}
+\textit{Date: [\today]}\\
+
+\newpage
+\begin{tikzpicture}
+    [remember picture, overlay]
+    \draw[line width = 2pt, black] 
+        ($(current page.north west) + (1cm,-1cm)$) 
+        rectangle 
+        ($(current page.south east) + (-1cm,1cm)$);
+\end{tikzpicture}
+\vspace{-2cm}
+\subsection*{Entry by: Aabir Sengupta}
+\textit{Date: [\today]}\\
+\section*{\underline{{\Large{Assignment 6 : Make a CV using LaTeX}}}}
+\vspace{0.5 cm}
+\begin{flushleft}
+    \textbf{\Large{\underline{Source code link:}}}$\href{https://github.com/Rajarshi-2005/LaTeX_Assignment_Group-11/blob/main/39959223039_BscForensic_Aabir.tex}{https://github.com/Rajarshi-2005/LaTeX_Assignment_Group-11/blob/main/39959223039_BscForensic_Aabir.tex}$
+\end{flushleft}
+\vspace{0.8 cm}
+\begin{flushleft}
+    \textbf{\underline{Output:}}
+\end{flushleft}
+\fbox{\includegraphics[width=0.8\linewidth]{cv.png}} % Adjusted width
 
 \end{document}
