@@ -75,6 +75,34 @@
     \textbf{\textit{Date: September 11, 2024}}
 
 \end{titlepage}
+
+\newpage
+\begin{tikzpicture}
+    [remember picture, overlay]
+    \draw[line width = 2pt, black]
+        ($(current page.north west) + (1cm,-1cm)$)
+        rectangle 
+        ($(current page.south east) + (-1cm,1cm)$);
+\end{tikzpicture}
+\vspace{-2cm}
+\centering
+\section*{\underline{\Huge\textbf{\textcolor{blue!60}{:Acknowledgement:}}}}
+\vspace{1 cm}
+\begin{flushleft}
+\par
+\Large{We would like to express our heartfelt gratitude to everyone who contributed to the success of this project. 
+
+First and foremost, we thank our instructors, \textbf{Ayan Ghosh, Pabitra Pal} for their invaluable guidance and support throughout the process. Your insights and feedback were instrumental in shaping our work.
+
+We also wish to acknowledge our teammates, \textbf{Rajarshi Biswas, Aabir Sengupta, Aditi Ghosh, Agnik Dey, Nawazish Alam} whose collaboration, creativity, and dedication made this project possible. The diverse skills and perspectives each of you brought to the table enriched our discussions and results.
+
+Additionally, we extend our appreciation to Chatgpt, Gemini, Youtube, Blackbox AI for providing resources and assistance that greatly enhanced our project.
+
+Finally, we thank our friends for their understanding and encouragement during our research and development phases.
+
+This project would not have been possible without the contributions of all these individuals. Thank you!}
+\end{flushleft}
+
 \newpage
 \begin{tikzpicture}
     [remember picture, overlay]
@@ -122,14 +150,21 @@
    \centering
     \includegraphics[width=0.5\linewidth]{OIP.jpeg}
 \end{figure}
-\vspace{0.5 cm}
+\vspace{0.2 cm}
 
 \section*{\Huge{\underline{{-:GitHub:-}}}}
-\paragraph{}{GitHub is a web-based platform that allows developers to host, share, and collaborate on software projects. It provides a version control system powered by Git, enabling teams to track changes, manage code repositories, and work together seamlessly across different locations. GitHub supports collaborative development through features like pull requests, issues, and project boards, making it essential for open-source projects and professional software development. Additionally, it integrates with various development tools, enhancing productivity and streamlining the software development lifecycle.}
+\vspace{-0.5 cm}
+\paragraph{}
+\begin{flushleft}
+GitHub is a web-based platform that allows developers to host, share, and collaborate on software projects. It provides a version control system powered by Git, enabling teams to track changes, manage code repositories, and work together seamlessly across different locations. GitHub supports collaborative development through features like pull requests, issues, and project boards, making it essential for open-source projects and professional software development. Additionally, it integrates with various development tools, enhancing productivity and streamlining the software development lifecycle.
+\end{flushleft}
 
 \subsection*{\underline{-:Installation:-}}
-\paragraph{}{Installing GitHub Desktop is a straightforward process that enhances your workflow by providing a user-friendly interface for managing repositories. To begin, download the installer from the [official GitHub Desktop website](https://desktop.github.com/) for your operating system—Windows or macOS. After downloading, run the installer and follow the on-screen instructions to complete the setup. Once installed, launch the application and sign in with your GitHub credentials, or create a new account if needed. GitHub Desktop simplifies the process of cloning repositories, making commits, and managing branches, making it an invaluable tool for developers of all skill levels. For Linux users, alternative methods like using Wine or other Git clients are available.}
-
+\vspace{-0.5 cm}
+\paragraph{}
+\begin{flushleft}
+Installing GitHub Desktop is a straightforward process that enhances your workflow by providing a user-friendly interface for managing repositories. To begin, download the installer from the [official GitHub Desktop website](https://desktop.github.com/) for your operating system—Windows or macOS. After downloading, run the installer and follow the on-screen instructions to complete the setup. Once installed, launch the application and sign in with your GitHub credentials, or create a new account if needed. GitHub Desktop simplifies the process of cloning repositories, making commits, and managing branches, making it an invaluable tool for developers of all skill levels. For Linux users, alternative methods like using Wine or other Git clients are available.
+\end{flushleft}
 
 \newpage
 \begin{tikzpicture}
@@ -148,7 +183,6 @@
 The primary purpose of a calculator program is to perform mathematical calculations efficiently and accurately. It provides a user-friendly interface for entering numbers and operators, and then quickly calculates and displays the result. 
 
 Calculators can range from simple devices that handle basic arithmetic to more advanced ones capable of complex functions like trigonometry, statistics, and even programming. They are widely used in various fields, including education, science, engineering, and everyday life.
-
 \begin{center}
 \section*{\underline{{:Explain the code properly:}}}
 \end{center}
@@ -396,10 +430,12 @@ Other examples:\\
 \subsection*{\LARGE{Write-Up: Experience with Git Branching {\underline{and Merging}}}}
 \hspace{1 cm}
 \paragraph{}
+\begin{flushleft}
+\Large{
 This assignment focused on the use of Git branching and merging to manage features in a collaborative environment. After creating separate branches for feature-1 and feature-2, each was developed independently.
 When merging feature-1 into the main branch, there were no conflicts. However, the merge of feature-2 caused a conflict in the shared.txt file. Conflict resolution was done manually, ensuring that the changes from both branches were retained.
-The practical experience highlighted the importance of clear commit messages and Git’s branching capabilities for parallel development and conflict management.
-
+The practical experience highlighted the importance of clear commit messages and Git’s branching capabilities for parallel development and conflict management.}
+\end{flushleft}
 \newpage
 \begin{tikzpicture}
     [remember picture, overlay]
@@ -411,6 +447,27 @@ The practical experience highlighted the importance of clear commit messages and
 \vspace{-2cm}
 \subsection*{Entry by: Rajarshi Biswas}
 \textit{Date: [\today]}\\
+\vspace{1 cm}
+\begin{flushleft}
+\section*{\underline{Introduction to LaTeX:}}
+\par
+\Large{LaTeX is a high-quality typesetting system widely used for technical and scientific documentation. It excels at handling complex content like mathematical equations, bibliographies, and tables, and is popular among researchers, academics, and publishers.
+
+LaTeX documents are created by writing a source file (.tex), which contains both the content of the document and the commands for formatting. The file is then compiled into a final output format, such as PDF, using a LaTeX distribution. LaTeX separates content from style, which means you can focus on the content while using predefined templates or packages to handle the formatting.
+
+Key Features of LaTeX
+Mathematical Formulas: LaTeX is excellent for complex math equations.
+Cross-referencing and Bibliographies: Automatic management of citations and references.
+Tables and Figures: LaTeX can handle complex tables, figures, and captions.
+Custom Formatting: Advanced customization options with packages and commands.
+Installing LaTeX
+Step 1: Install a LaTeX Distribution
+LaTeX distributions provide the necessary tools to compile LaTeX files into output formats like PDF. Some popular distributions are:
+
+TeX Live (cross-platform: Windows, macOS, Linux)
+MiKTeX (Windows, macOS, Linux)
+MacTeX (macOS, based on TeX Live).}
+\end{flushleft}
 
 \newpage
 \begin{tikzpicture}
@@ -426,7 +483,7 @@ The practical experience highlighted the importance of clear commit messages and
 \section*{\underline{{\Large{Assignment 6 : Make a CV using LaTeX}}}}
 \vspace{0.5 cm}
 \begin{flushleft}
-    \textbf{\Large{\underline{Source code link:}}}$\href{https://github.com/Rajarshi-2005/LaTeX_Assignment_Group-11/blob/main/39959223039_BscForensic_Aabir.tex}{https://github.com/Rajarshi-2005/LaTeX_Assignment_Group-11/blob/main/39959223039_BscForensic_Aabir.tex}$
+    \textbf{\Large{\underline{Source code link:}}}$\href{ https://github.com/Rajarshi-2005/LaTeX_Assignment_Group-11/blob/main/39959223039_BscForensic_Aabir.tex}{https://github.com/Rajarshi-2005/LaTeX_Assignment_Group-11/blob/main/39959223039_BscForensic_Aabir.tex}$
 \end{flushleft}
 \vspace{0.8 cm}
 \begin{flushleft}
