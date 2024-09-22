@@ -1,0 +1,143 @@
+\documentclass[12pt]{article}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{graphicx}
+\usepackage{enumitem}
+\usepackage{setspace}
+\usepackage[a4paper,margin=0.75in]{geometry}
+
+\title{My First \LaTeX\ Document}
+\author{Aabir sengupta}
+\date{April 25, 2015}
+
+\begin{document}
+\maketitle
+\begin{center}
+    \includegraphics[width=0.2\textwidth]{Abir.jpg}
+\end{center}
+\section{Introduction}
+\subsection{About Me}
+I am Aabir sengupta.I have a small little family of four membersUse this paragraph to introduce yourself. You may wish to talk about your background (where you grew up, places you’ve traveled, your family, pets, etc.) or you could share some interesting facts about yourself or experiences you’ve had.
+\subsection{Interests \& Hobbies}
+\begin{itemize}
+    \item \textbf{Thing 1} Digital Art
+    \item \textbf{Thing 2} Music
+    \begin{itemize}
+        \item Include a bulleted list at least two levels deep (this is a second-level bullet).
+        \begin{itemize}
+            \item This is a third-level bullet.
+            \item This is a third-level bullet.
+        \end{itemize}
+        \item This is a second-level bullet.
+        \begin{itemize}
+            \item This is a third-level bullet.
+            \item This is a third-level bullet.
+        \end{itemize}
+    \end{itemize}
+\end{itemize}
+\subsection{Favorite Quotations}
+\begin{enumerate}
+    \item \textit{The only way to do great work is to love to do. - Steve Jobs}
+    \item \textit{Small acts of kindness, like small seeds, can grow forest - Rajarshi }
+\newpage
+\end{enumerate}
+\section{Mathematics}
+
+\subsection{Mathematics and Me}
+Reflect upon your experiences with mathematics. What do you like about mathematics? How far (if at all) would you like to take your study of mathematics? What have you enjoyed learning this year in mathematics? What have you found the most challenging?
+
+\subsection{Mathematical Notation}
+Choose a four-digit number which you will use to practice typesetting mathematical expressions. Typeset everything below, including all text just as you see it, substituting your four-digit number in place of the sample number 1972 wherever it occurs (use appropriate values when simplifying the equation in 4(b)).
+
+\begin{enumerate}
+    \item Superscripts, subscripts, and Greek letters
+    \begin{enumerate}
+        \item $19^{72}$
+        \item $1^{{{{9}^{7}}^{2}}}$
+        \item $19_{72}$
+        \item $1_{{{9}_{7}}_{2}}$
+        \item $1972{\pi}$
+        \item $\cos \theta$
+        \item $\tan^{-1}(1.972)$
+        \item $\log_{19}72$
+        \item $\ln 1972$
+        \item $e^{1.972}$
+        \item $0 < x \leq 1972$
+        \item $y \geq 1972$
+    \end{enumerate}
+
+    \item Roots, fractions, and displaystyle
+    \begin{enumerate}
+        \item $\sqrt{1972}$
+        \item $\sqrt[19]{72}$
+        \item normal: $\frac{19}{72}$ displaystyle: $\displaystyle \frac{19}{72}$
+        \item normal: $\frac{1}{9 + \frac{7}{2}}$ displaystyle: $\displaystyle \frac{1}{9 + \frac{7}{2}}$
+        \item normal: $\sqrt{\frac{19}{72}}$ displaystyle: $\displaystyle \sqrt{\frac{19}{72}}$
+    \end{enumerate}
+
+    \item Delimiters
+    \begin{enumerate}
+        \item display math mode:
+            \begin{equation}
+                (1+\frac{9}{72}) \nonumber
+            \end{equation}
+        \item display math mode: 
+            \begin{equation}
+                \left|
+                    \frac{1}{9}-\frac{7}{2}\right| \nonumber\\
+            \end{equation}
+    \end{enumerate}
+    \item Tables and equation arrays
+    \begin{enumerate}
+        \item
+        \begin{tabular}{|c|c|c|c|c|}
+        \hline
+        $x$ & 1 & 2 & 3 & 4 \\
+        \hline
+        $f(x)$ & 1 & 9 & 7 & 2 \\
+        \hline
+        \end{tabular}
+
+        \item
+        \begin{align}
+            1 + 9 - 7 \times 2 &= x \tag{1}\\
+            1 + 9 - 14 &= x \tag{2}\\
+            10 - 14 &= x \tag{3}\\
+            x &= -4 \tag{4}
+        \end{align}
+    \end{enumerate}
+
+    \item Functions \& Formulas
+    \begin{enumerate}
+        \item The quadratic formula: \[x = \frac{-b \pm \sqrt{b^2 - 4ac}}{2a}\]
+        
+        \item The function \( f(x) = \left( x + \frac{1}{9} \right)^2 - \frac{7}{2} \) has domain \( D_f : (-\infty, \infty) \) and range \( R_f : \left[ -\frac{7}{2}, \infty \right) \).
+        
+        \item Definition of a Derivative: \( \lim_{h \to 0} \frac{f(x+h) - f(x)}{h} = f'(x) \).
+
+        \item Chain Rule: \( [f(g(x))]' = f'(g(x)) \cdot g'(x) \).
+
+        \item \(\frac{d^2 y}{dx^2} = f''(x) \).
+        
+        \item \(\int \sec^2 x \, dx = \tan x + C\).
+
+        \item $\int e^{2x} \, dx = \frac{1}{2}e^{2x} + C$
+        
+        \item Fundamental Theorem of Calculus, Part 1: $\int_a^b f'(x) \, dx = f(b) - f(a)$
+        
+        \item Fundamental Theorem of Calculus, Part 2: $\frac{d}{dx} \int_a^{g(x)} f(t) \, dt = f(g(x)) \cdot g'(x)$
+        
+        \item Euler’s Method: $y_1 = y_0 + hF(x_0, y_0) $ where $h$ is the step size, and $F(x, y) = \frac{dy}{dx}$
+        
+        \item The geometric sequence $a_n = \left\{1972, \frac{1972}{2}, \frac{1972}{2^2}, \frac{1972}{2^3}, \dots, \frac{1972}{2^n} \right\}$
+        
+        \item The geometric series $S_n = \sum_{n=1}^{\infty} \frac{1972}{2^n}$ is convergent since $\left|r\right| = \left|\frac{1}{2}\right| < 1$.
+        
+        \item Taylor Series: $\sum_{n=0}^{\infty} \frac{f^{(n)}(c)}{n!}(x-c)^n$
+        
+        \item Velocity Vector: $\vec{v}(t) = x'(t)\hat{i} + y'(t)\hat{j} = \left\langle \frac{dx}{dt}, \frac{dy}{dt} \right\rangle$
+        
+        \item Area of Polar Curve: \( A = \frac{1}{2} \int_a^b r^2 \, d\theta \).
+    \end{enumerate}
+\end{enumerate}
+\end{document}
